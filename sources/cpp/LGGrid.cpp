@@ -1,5 +1,12 @@
 #include ".\..\header\LGGrid.h"
 
+/*!
+* \file LGGrid.cpp
+* \brief Grid implementation
+* \author Alexis Koutero
+* \version 0.1
+*/
+
 /*** CONSTRUCTORS ***/
 LGGrid::LGGrid() {
 	int isAlive;
@@ -11,7 +18,7 @@ LGGrid::LGGrid() {
 	m_totalAliveCells = 0;
 	m_totalDeath = 0;
 	m_totalBirth = 0;
-	m_totalExecution = 0
+	m_totalExecution = 0;
 	//include empty edges
 	//Call automatically default constructor for LGCell
 	m_cellGrid = new LGCell[m_xTechSize*m_yTechSize];
@@ -166,8 +173,9 @@ void LGGrid::displayStats() const {
 void LGGrid::updateStats() {
 	m_totalAliveCells = 0;
 	for (int i = 0; i < m_xRealSize; i++) {
-		for (int y = 0; y < m_xRealSize; j++) {
+		for (int j = 0; j < m_xRealSize; j++) {
 			if (this->isCellAlive(i, j) == true) m_totalAliveCells++;
+			//TODO
 		}
 	}
 }

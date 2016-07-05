@@ -1,3 +1,10 @@
+/*!
+* \file LGCell.cpp
+* \brief Cell implementation
+* \author Alexis Koutero
+* \version 0.1
+*/
+
 #include ".\..\header\LGCell.h"
 
 /*** CONSTRUCTORS ***/

@@ -1,3 +1,10 @@
+/*!
+* \file LifeGame.cpp
+* \brief Main for test
+* \author Alexis Koutero
+* \version 0.1
+*/
+
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
