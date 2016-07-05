@@ -1,0 +1,231 @@
+\hypertarget{class_l_g_grid}{}\section{L\+G\+Grid Class Reference}
+\label{class_l_g_grid}\index{L\+G\+Grid@{L\+G\+Grid}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_l_g_grid_a7ed793fb862cfc57a1b56cb3a0f4110f}{L\+G\+Grid} ()
+\begin{DoxyCompactList}\small\item\em Defaul constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_l_g_grid_ab6acdeeb8bd2409ee112e55cc195e984}{L\+G\+Grid} (int X\+Size, int Y\+Size)
+\begin{DoxyCompactList}\small\item\em Constructor to build a specific sized grid. \end{DoxyCompactList}\item 
+\hyperlink{class_l_g_grid_aabef61b2d56d7a7ad9c1ed25e91b0677}{L\+G\+Grid} (const \hyperlink{class_l_g_grid}{L\+G\+Grid} \&Grid)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_l_g_grid_a2522e4c8eed55410ff24836170badbc6}{$\sim$\+L\+G\+Grid} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+int \hyperlink{class_l_g_grid_a154c933d8325453e41dcea84ccf5024d}{get\+X\+Size} () const 
+\begin{DoxyCompactList}\small\item\em Return number of line. \end{DoxyCompactList}\item 
+int \hyperlink{class_l_g_grid_a3334e87b2d9d91034a55a3f9935e7fc1}{get\+Y\+Size} () const 
+\begin{DoxyCompactList}\small\item\em Return number of column. \end{DoxyCompactList}\item 
+bool \hyperlink{class_l_g_grid_a3f80bb0ef067ba5ca56dc46559546210}{is\+Cell\+Alive} (int X, int Y) const 
+\begin{DoxyCompactList}\small\item\em Is a cell alive? \end{DoxyCompactList}\item 
+int \hyperlink{class_l_g_grid_ad89b8fe1a3bbf109deb0ccb1964de85a}{get\+Total\+Alive\+Cells} () const 
+\begin{DoxyCompactList}\small\item\em How many cells are alive? \end{DoxyCompactList}\item 
+void \hyperlink{class_l_g_grid_a37f267a351299074d9d1d03ea28a2d98}{set\+Cell\+Alive} (int X, int Y, bool Is\+Alive)
+\begin{DoxyCompactList}\small\item\em Change cell\textquotesingle{}s status. \end{DoxyCompactList}\item 
+void \hyperlink{class_l_g_grid_ad161c500c152ca9288d2ba4a230d3da7}{execute} ()\hypertarget{class_l_g_grid_ad161c500c152ca9288d2ba4a230d3da7}{}\label{class_l_g_grid_ad161c500c152ca9288d2ba4a230d3da7}
+
+\begin{DoxyCompactList}\small\item\em Execute on turn of the game. \end{DoxyCompactList}\item 
+void \hyperlink{class_l_g_grid_a804d76972bad129df26db583525279ca}{display} () const \hypertarget{class_l_g_grid_a804d76972bad129df26db583525279ca}{}\label{class_l_g_grid_a804d76972bad129df26db583525279ca}
+
+\begin{DoxyCompactList}\small\item\em Dispays on stdout all cells. \end{DoxyCompactList}\item 
+void \hyperlink{class_l_g_grid_a13a56fcc4a925652b5f1bb801ff22d52}{display\+Tech} () const \hypertarget{class_l_g_grid_a13a56fcc4a925652b5f1bb801ff22d52}{}\label{class_l_g_grid_a13a56fcc4a925652b5f1bb801ff22d52}
+
+\begin{DoxyCompactList}\small\item\em display on stdout all cells including empty edges \end{DoxyCompactList}\item 
+void \hyperlink{class_l_g_grid_afb90f52b6f28dc776455042724565041}{display\+Stats} () const 
+\begin{DoxyCompactList}\small\item\em display current grid\textquotesingle{}s stats \end{DoxyCompactList}\item 
+void \hyperlink{class_l_g_grid_a32c0809f6ff084d0eb3332f73aa7d20e}{update\+Stats} ()
+\begin{DoxyCompactList}\small\item\em update statistics. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{L\+G\+Grid@{L\+G\+Grid}!L\+G\+Grid@{L\+G\+Grid}}
+\index{L\+G\+Grid@{L\+G\+Grid}!L\+G\+Grid@{L\+G\+Grid}}
+\subsubsection[{\texorpdfstring{L\+G\+Grid()}{LGGrid()}}]{\setlength{\rightskip}{0pt plus 5cm}L\+G\+Grid\+::\+L\+G\+Grid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_g_grid_a7ed793fb862cfc57a1b56cb3a0f4110f}{}\label{class_l_g_grid_a7ed793fb862cfc57a1b56cb3a0f4110f}
+
+
+Defaul constructor. 
+
+Default size is 5 by 5 grid is all cells dead \index{L\+G\+Grid@{L\+G\+Grid}!L\+G\+Grid@{L\+G\+Grid}}
+\index{L\+G\+Grid@{L\+G\+Grid}!L\+G\+Grid@{L\+G\+Grid}}
+\subsubsection[{\texorpdfstring{L\+G\+Grid(int X\+Size, int Y\+Size)}{LGGrid(int XSize, int YSize)}}]{\setlength{\rightskip}{0pt plus 5cm}L\+G\+Grid\+::\+L\+G\+Grid (
+\begin{DoxyParamCaption}
+\item[{int}]{X\+Size, }
+\item[{int}]{Y\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_g_grid_ab6acdeeb8bd2409ee112e55cc195e984}{}\label{class_l_g_grid_ab6acdeeb8bd2409ee112e55cc195e984}
+
+
+Constructor to build a specific sized grid. 
+
+All cells are dead
+
+
+\begin{DoxyParams}{Parameters}
+{\em X\+Size} & \+: number of line without empty ones \\
+\hline
+{\em Y\+Size} & \+: number of column without empty ones \\
+\hline
+\end{DoxyParams}
+\index{L\+G\+Grid@{L\+G\+Grid}!L\+G\+Grid@{L\+G\+Grid}}
+\index{L\+G\+Grid@{L\+G\+Grid}!L\+G\+Grid@{L\+G\+Grid}}
+\subsubsection[{\texorpdfstring{L\+G\+Grid(const L\+G\+Grid \&\+Grid)}{LGGrid(const LGGrid &Grid)}}]{\setlength{\rightskip}{0pt plus 5cm}L\+G\+Grid\+::\+L\+G\+Grid (
+\begin{DoxyParamCaption}
+\item[{const {\bf L\+G\+Grid} \&}]{Grid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_g_grid_aabef61b2d56d7a7ad9c1ed25e91b0677}{}\label{class_l_g_grid_aabef61b2d56d7a7ad9c1ed25e91b0677}
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Grid} & \+: creates a new grid based on the parameter \\
+\hline
+\end{DoxyParams}
+\index{L\+G\+Grid@{L\+G\+Grid}!````~L\+G\+Grid@{$\sim$\+L\+G\+Grid}}
+\index{````~L\+G\+Grid@{$\sim$\+L\+G\+Grid}!L\+G\+Grid@{L\+G\+Grid}}
+\subsubsection[{\texorpdfstring{$\sim$\+L\+G\+Grid()}{~LGGrid()}}]{\setlength{\rightskip}{0pt plus 5cm}L\+G\+Grid\+::$\sim$\+L\+G\+Grid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_g_grid_a2522e4c8eed55410ff24836170badbc6}{}\label{class_l_g_grid_a2522e4c8eed55410ff24836170badbc6}
+
+
+Destructor. 
+
+Desallocates grid and cells. 
+
+\subsection{Member Function Documentation}
+\index{L\+G\+Grid@{L\+G\+Grid}!display\+Stats@{display\+Stats}}
+\index{display\+Stats@{display\+Stats}!L\+G\+Grid@{L\+G\+Grid}}
+\subsubsection[{\texorpdfstring{display\+Stats() const }{displayStats() const }}]{\setlength{\rightskip}{0pt plus 5cm}void L\+G\+Grid\+::display\+Stats (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_l_g_grid_afb90f52b6f28dc776455042724565041}{}\label{class_l_g_grid_afb90f52b6f28dc776455042724565041}
+
+
+display current grid\textquotesingle{}s stats 
+
+Current stats are \+:
+\begin{DoxyItemize}
+\item Grid size
+\item Total cells
+\item Total alive cells
+\item Number of execution
+\item Number of death
+\item Number of birth 
+\end{DoxyItemize}\index{L\+G\+Grid@{L\+G\+Grid}!get\+Total\+Alive\+Cells@{get\+Total\+Alive\+Cells}}
+\index{get\+Total\+Alive\+Cells@{get\+Total\+Alive\+Cells}!L\+G\+Grid@{L\+G\+Grid}}
+\subsubsection[{\texorpdfstring{get\+Total\+Alive\+Cells() const }{getTotalAliveCells() const }}]{\setlength{\rightskip}{0pt plus 5cm}int L\+G\+Grid\+::get\+Total\+Alive\+Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_l_g_grid_ad89b8fe1a3bbf109deb0ccb1964de85a}{}\label{class_l_g_grid_ad89b8fe1a3bbf109deb0ccb1964de85a}
+
+
+How many cells are alive? 
+
+\begin{DoxyReturn}{Returns}
+\+: total number of alive cells on the current grid 
+\end{DoxyReturn}
+\index{L\+G\+Grid@{L\+G\+Grid}!get\+X\+Size@{get\+X\+Size}}
+\index{get\+X\+Size@{get\+X\+Size}!L\+G\+Grid@{L\+G\+Grid}}
+\subsubsection[{\texorpdfstring{get\+X\+Size() const }{getXSize() const }}]{\setlength{\rightskip}{0pt plus 5cm}int L\+G\+Grid\+::get\+X\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_l_g_grid_a154c933d8325453e41dcea84ccf5024d}{}\label{class_l_g_grid_a154c933d8325453e41dcea84ccf5024d}
+
+
+Return number of line. 
+
+\begin{DoxyReturn}{Returns}
+number of line without empty ones 
+\end{DoxyReturn}
+\index{L\+G\+Grid@{L\+G\+Grid}!get\+Y\+Size@{get\+Y\+Size}}
+\index{get\+Y\+Size@{get\+Y\+Size}!L\+G\+Grid@{L\+G\+Grid}}
+\subsubsection[{\texorpdfstring{get\+Y\+Size() const }{getYSize() const }}]{\setlength{\rightskip}{0pt plus 5cm}int L\+G\+Grid\+::get\+Y\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_l_g_grid_a3334e87b2d9d91034a55a3f9935e7fc1}{}\label{class_l_g_grid_a3334e87b2d9d91034a55a3f9935e7fc1}
+
+
+Return number of column. 
+
+\begin{DoxyReturn}{Returns}
+number of column without empty ones 
+\end{DoxyReturn}
+\index{L\+G\+Grid@{L\+G\+Grid}!is\+Cell\+Alive@{is\+Cell\+Alive}}
+\index{is\+Cell\+Alive@{is\+Cell\+Alive}!L\+G\+Grid@{L\+G\+Grid}}
+\subsubsection[{\texorpdfstring{is\+Cell\+Alive(int X, int Y) const }{isCellAlive(int X, int Y) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool L\+G\+Grid\+::is\+Cell\+Alive (
+\begin{DoxyParamCaption}
+\item[{int}]{X, }
+\item[{int}]{Y}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_l_g_grid_a3f80bb0ef067ba5ca56dc46559546210}{}\label{class_l_g_grid_a3f80bb0ef067ba5ca56dc46559546210}
+
+
+Is a cell alive? 
+
+Check if a cell is alive or not. Manage empty cells therefore parameters should be as for the real grid only
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & \+: line position \\
+\hline
+{\em Y} & \+: column position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the cell is alive 
+\end{DoxyReturn}
+\index{L\+G\+Grid@{L\+G\+Grid}!set\+Cell\+Alive@{set\+Cell\+Alive}}
+\index{set\+Cell\+Alive@{set\+Cell\+Alive}!L\+G\+Grid@{L\+G\+Grid}}
+\subsubsection[{\texorpdfstring{set\+Cell\+Alive(int X, int Y, bool Is\+Alive)}{setCellAlive(int X, int Y, bool IsAlive)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+G\+Grid\+::set\+Cell\+Alive (
+\begin{DoxyParamCaption}
+\item[{int}]{X, }
+\item[{int}]{Y, }
+\item[{bool}]{Is\+Alive}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_g_grid_a37f267a351299074d9d1d03ea28a2d98}{}\label{class_l_g_grid_a37f267a351299074d9d1d03ea28a2d98}
+
+
+Change cell\textquotesingle{}s status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & \+: line position \\
+\hline
+{\em Y} & \+: column position \\
+\hline
+\end{DoxyParams}
+\index{L\+G\+Grid@{L\+G\+Grid}!update\+Stats@{update\+Stats}}
+\index{update\+Stats@{update\+Stats}!L\+G\+Grid@{L\+G\+Grid}}
+\subsubsection[{\texorpdfstring{update\+Stats()}{updateStats()}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+G\+Grid\+::update\+Stats (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_g_grid_a32c0809f6ff084d0eb3332f73aa7d20e}{}\label{class_l_g_grid_a32c0809f6ff084d0eb3332f73aa7d20e}
+
+
+update statistics. 
+
+Current stats are \+:
+\begin{DoxyItemize}
+\item Grid size
+\item Total cells
+\item Total alive cells
+\item Number of execution
+\item Number of death
+\item Number of birth 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Documents/\+Visual Studio 2015/\+Projects/\+Life\+Game/\+Life\+Game/sources/header/\hyperlink{_l_g_grid_8h}{L\+G\+Grid.\+h}\item 
+D\+:/\+My\+Documents/\+Visual Studio 2015/\+Projects/\+Life\+Game/\+Life\+Game/sources/cpp/\hyperlink{_l_g_grid_8cpp}{L\+G\+Grid.\+cpp}\end{DoxyCompactItemize}
