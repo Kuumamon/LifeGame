@@ -2,23 +2,39 @@
 #include <cstdlib>
 #include <ctime>
 #include <cstdlib>
-#include "LGCell.h"
-#include "LGGrid.h"
+#include ".\..\header\LGCell.h"
+#include ".\..\header\LGGrid.h"
 
 using namespace std;
 
 int main(){
 
-	LGGrid lg;
+	LGGrid* lg = 0;
 	
 	/*** INIT ***/
 	srand(time(0));
 
 	/*** TEST CODE***/
-	lg.setCellAlive(5, 5, true);
-	if (lg.isCellAlive(5, 5)) {
-		cout << "Is alive" << endl;
-	}
+	//New 5*5 grid
+	lg = new LGGrid();
+	//lg->displayTech();
+	//cout << endl;
+	//lg->display();
+	lg->setCellAlive(1, 2, true);
+	lg->setCellAlive(2, 2, true);
+	lg->setCellAlive(3, 2, true);
+	lg->display();
+	lg->execute();
+	cout << endl;
+	lg->display();
+	lg->execute();
+	cout << endl;
+	lg->display();
+	cout << endl;
+	lg->displayStats();
 	system("pause");
+
+	/*** TERMINATE***/
+	delete lg;
 	return 0;
 }

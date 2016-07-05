@@ -1,4 +1,4 @@
-#include "LGCell.h"
+#include ".\..\header\LGCell.h"
 
 /*** CONSTRUCTORS ***/
 LGCell::LGCell() : m_isAlive(false) {}
